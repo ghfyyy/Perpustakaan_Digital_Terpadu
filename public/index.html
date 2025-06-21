@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustaka Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Perpustaka Digital</a>
+            <form class="search-bar">
+                <input type="text" placeholder="Cari Buku...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Kategori Buku</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content container">
+        <main>
+            <section class="buku-section">
+                <div class="section-header">
+                    <h2>Buku Populer</h2>
+                    <a href="#" class="view-all">Lihat Semua</a>
+                </div>
+            </section>
+
+            <section class="buku-section">
+                <div class="section-header">
+                    <h2>Buku Terbaru</h2>
+                    <a href="#" class="view-all">Tampilkan Semua</a>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>FOLLOW US</h3>
+                <div class="social-links">
+                    <a href="#" class="social-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-ig"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Perpustaka Digital.</p>
+        </div>
+    </footer>
+     <div id="ai-copilot-button">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </div>
+    <div id="ai-chat-container" class="hidden">
+        <div class="ai-chat-header">
+            <h3>Claudia</h3>
+            <button id="close-ai-chat">&times;</button>
+        </div>
+        <div class="ai-chat-box" id="ai-chat-box">
+            <div class="ai-message">
+                <p>Halo! Ada yang bisa saya bantu?</p>
+            </div>
+        </div>
+        <form class="ai-chat-input-form" id="ai-chat-form">
+            <input type="text" id="ai-chat-input" placeholder="Ketik pertanyaan Anda..." autocomplete="off">
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
